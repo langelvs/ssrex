@@ -16,3 +16,4 @@ dist
 /bin
 /.target
 /.cache
+.DS_Store
