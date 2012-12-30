@@ -5,9 +5,10 @@ import play.Project._
 object ApplicationBuild extends Build {
 
   val appName         = "ssrex"
-  val appVersion      = "1.0-SNAPSHOT"
+  val appVersion      = "0.0.1-SNAPSHOT"
 
   val appDependencies = Seq(
+      "org.fusesource.scalate" %% "scalate-core" % "1.6.1"
   )
 
 
