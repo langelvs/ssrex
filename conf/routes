@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index
+GET     /frag                       controllers.Application.frag
 GET     /jade                       controllers.Application.jade
 GET     /scaml                      controllers.Application.scaml
 
