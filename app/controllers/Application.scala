@@ -1,7 +1,7 @@
 package controllers
 
 import play.api.mvc.{ Action, Controller }
-import plugins.Scalate.engine
+import plugins.scalate._
 
 object Application extends Controller {
   
@@ -10,11 +10,11 @@ object Application extends Controller {
   }
   
   def jade = Action {
-    Ok(engine.layout("/views/jade/index.jade")).as("text/html")
+    Ok(template("/views/jade/index.jade"))
   }
   
   def scaml = Action {
-    Ok(engine.layout("/views/scaml/index.scaml")).as("text/html")
+    Ok(template("/views/scaml/index.scaml"))
   }
   
 }

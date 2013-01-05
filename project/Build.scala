@@ -8,7 +8,9 @@ object ApplicationBuild extends Build {
   val appVersion      = "0.0.1-SNAPSHOT"
 
   val appDependencies = Seq(
-      "org.fusesource.scalate" %% "scalate-core" % "1.6.1"
+      "io.netty" % "netty" % "3.6.1.Final",
+      "org.fusesource.scalate" %% "scalate-core" % "1.6.1",
+      "org.jsoup" % "jsoup" % "1.7.1"
   )
 
 
